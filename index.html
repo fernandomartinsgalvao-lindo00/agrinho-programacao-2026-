@@ -3,131 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabores Caseiros - Sua Cozinha Digital</title>
+    <title>Agrinho 2026 - Categoria Robótica</title>
     <style>
-        /* Estilização Básica (O Tempero) */
+        :root {
+            --verde-agrinho: #2e7d32;
+            --verde-claro: #e8f5e9;
+            --laranja-destaque: #f57c00;
+            --texto: #333;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: var(--texto);
             margin: 0;
-            padding: 0;
-            background-color: #fdfaf6;
-            color: #333;
+            background-color: #f9f9f9;
         }
 
         header {
-            background-color: #e67e22;
+            background-color: var(--verde-agrinho);
             color: white;
-            padding: 2rem;
+            padding: 2rem 1rem;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         nav {
-            background: #d35400;
-            padding: 0.5rem;
-            text-align: center;
+            background: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
         nav a {
-            color: white;
             text-decoration: none;
-            margin: 0 15px;
+            color: var(--verde-agrinho);
             font-weight: bold;
         }
 
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
             background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
-        .receita-header {
-            border-bottom: 2px solid #e67e22;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
+        h2 {
+            color: var(--verde-agrinho);
+            border-bottom: 2px solid var(--verde-claro);
+            padding-bottom: 0.5rem;
         }
 
-        .ingredientes {
-            background-color: #fff5eb;
-            padding: 15px;
-            border-left: 5px solid #e67e22;
-            margin-bottom: 20px;
+        .tema-box {
+            background-color: var(--verde-claro);
+            padding: 1.5rem;
+            border-left: 5px solid var(--verde-agrinho);
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center;
         }
 
-        h2, h3 {
-            color: #d35400;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: var(--verde-agrinho);
+            color: white;
+            padding: 12px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .btn-inscricao {
+            display: inline-block;
+            background: var(--laranja-destaque);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 1rem;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        .badge {
-            background: #27ae60;
+            padding: 2rem;
+            background: #333;
             color: white;
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-size: 0.8rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>🍳 Sabores Caseiros</h1>
-        <p>Receitas simples para quem ama comer bem</p>
-    </header>
+<header>
+    <h1>Concurso Agrinho 2026</h1>
+    <p>Categoria: Robótica - Rede Estadual de Ensino do Paraná</p>
+</header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Doces</a>
-        <a href="#">Salgados</a>
-        <a href="#">Contato</a>
-    </nav>
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#categorias">Categorias</a>
+    <a href="#cronograma">Cronograma</a>
+    <a href="#premios">Premiação</a>
+</nav>
 
-    <div class="container">
-        <article>
-            <div class="receita-header">
-                <h2>Brigadeiro Gourmet Tradicional</h2>
-                <span class="badge">Dificuldade: Fácil</span>
-                <span class="badge">Tempo: 20 min</span>
-            </div>
+<div class="container">
+    
+    <section id="sobre">
+        <h2>O Concurso</h2>
+        <p>O Concurso Agrinho visa estimular propostas inovadoras de Robótica para ampliar o conhecimento dos estudantes e incentivar a construção de protótipos com materiais tecnológicos e sustentáveis.</p>
+        <div class="tema-box">
+            "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"
+        </div>
+    </section>
 
-            <p>O clássico das festas brasileiras, agora com um toque especial de chocolate nobre.</p>
+    <section id="categorias">
+        <h2>Quem pode participar?</h2>
+        <ul>
+            <li><strong>Subcategoria 1:</strong> Estudantes do 6º ao 9º ano do Ensino Fundamental II.</li>
+            <li><strong>Subcategoria 2:</strong> Estudantes da 1ª à 4ª série do Ensino Médio.</li>
+            <li><strong>Formação:</strong> Equipes de 4 alunos + 1 professor orientador.</li>
+        </ul>
+        <p><em>*A participação é voluntária e gratuita.</em></p>
+    </section>
 
-            <h3>🛒 Ingredientes</h3>
-            <div class="ingredientes">
-                <ul>
-                    <li>1 lata de leite condensado</li>
-                    <li>1 colher (sopa) de manteiga sem sal</li>
-                    <li>3 colheres (sopa) de cacau em pó (50%)</li>
-                    <li>Granulado de boa qualidade para decorar</li>
-                </ul>
-            </div>
+    <section id="cronograma">
+        <h2>Cronograma Importante</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Atividade</th>
+                    <th>Período</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Elaboração dos Projetos</td>
+                    <td>Fevereiro até 08/06/2026</td>
+                </tr>
+                <tr>
+                    <td>Inscrição Etapa Escolar</td>
+                    <td>Até 08/06/2026</td>
+                </tr>
+                <tr>
+                    <td>Inscrição Etapa Regional</td>
+                    <td>15/06 a 22/06/2026</td>
+                </tr>
+                <tr>
+                    <td>Inscrição Etapa Estadual</td>
+                    <td>27/07 a 06/08/2026</td>
+                </tr>
+                <tr>
+                    <td>Evento de Premiação</td>
+                    <td>Novembro de 2026 (Curitiba)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-            <h3>👨‍🍳 Modo de Preparo</h3>
-            <ol>
-                <li>Em uma panela de fundo grosso, misture o leite condensado, a manteiga e o cacau.</li>
-                <li>Leve ao fogo baixo, mexendo sem parar para não queimar.</li>
-                <li>O ponto ideal é quando a massa <strong>desprender totalmente do fundo</strong> da panela.</li>
-                <li>Transfira para um prato untado e deixe esfriar completamente.</li>
-                <li>Enrole as bolinhas, passe no granulado e coloque em forminhas.</li>
-            </ol>
-        </article>
-    </div>
+    <section id="premios">
+        <h2>Premiação</h2>
+        <p>Os vencedores do 1º ao 32º lugar em cada subcategoria na Etapa Estadual receberão:</p>
+        <ul>
+            <li><strong>Para cada Aluno:</strong> 01 Smartphone.</li>
+            <li><strong>Para o Professor:</strong> 01 Smartphone.</li>
+        </ul>
+        <p>As despesas de viagem para a cerimônia em Curitiba ficam a cargo da entidade realizadora.</p>
+    </section>
 
-    <hr>
+</div>
 
-    <footer>
-        <p>&copy; 2024 Sabores Caseiros - Feito com ❤️ e fome.</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 SENAR-PR & SEED-PR. Organização: Comissão Organizadora do Concurso.</p>
+    <p>Dúvidas: robotica.parana@escola.pr.gov.br</p>
+</footer>
 
 </body>
 </html>
